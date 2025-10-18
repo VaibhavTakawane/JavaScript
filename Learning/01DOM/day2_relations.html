@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            background: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="parent" id="parent">
+        <div class="child" id="child">Monday</div>
+        <div class="child" id="child">Tuesday</div>
+        <div class="child" id="child">Wednesday</div>
+        <div class="child" id="child">Thursday</div>
+    </div>
+</body>
+<script>
+    // const parent = document.querySelector(".parent")
+    //ACCESSING CHILDREN FROM THE PARENT
+
+    // console.log(parent);
+    // console.log(parent.children[1].innerHTML);
+    // console.log(parent.children);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerText);
+    // }
+
+    // parent.children[1].style.color = 'red'
+    // parent.children[1].style.background = 'white'
+
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild.style.color = 'red');
+    //----------------------------------------------------------------------------------------
+
+    // ACCESSING THE PARENT FROM THE CHILD
+    // const firstChild = document.querySelector('.child');
+    // console.log(firstChild);    //displays first child
+    // console.log(firstChild.parentElement);  //displays the parent element
+    // console.log(firstChild.nextElementSibling); //displays the next element i.e => Tuesday
+
+    //----------------------------------------------------------------------------------------
+    // NODES:
+    // const parent = document.querySelector(".parent")
+    // console.log("nodes => ", parent.childNodes);
+    //----------------------------------------------------------------------------------------
+
+
+    // REVISION:
+
+
+    // 1.parent to child:
+    // const par = document.querySelector(".parent")
+    // console.log(par.children[0].style.color = "red");
+    // console.log(par.firstElementChild);
+    // console.log(par.lastElementChild);
+// ----------------------------------------------
+    // 2.child to parent.
+    // const ch = document.querySelector(".child")
+    // console.log(ch);
+
+    // console.log(ch.parentElement);
+    // console.log(ch.nextElementSibling);
+
+    // let nodes = document.querySelector(".parent")
+    // console.log(nodes.childNodes);
+
+    // console.log(par.children[1].innerHTML);
+    // console.log(par.children.length);
+    // ------------------------------------------
+    // for (let i = 0; i < par.children.length; i++) {
+    //     if (i % 2 == 0) {
+    //         console.log(par.children[i].style.color = "red");
+    //     }
+    //     else {
+    //         console.log(par.children[i].style.color = "red");
+    //     }
+    // }
+
+</script>
+
+</html>

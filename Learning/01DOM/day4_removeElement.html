@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove element</title>
+    <style>
+        .body {
+            background: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <ul class="ul">
+        <li class="li">c</li>
+        <li class="li">python</li>
+        <li class="li">java</li>
+    </ul>
+</body>
+
+<script>
+    // ADDING ELEMENT:
+    // 1.
+    // adding list to ul with innerHTML
+    // function addLi(list) {
+    //     const li = document.createElement("li")
+    //     li.innerHTML = list
+    //     document.querySelector(".ul").appendChild(li)
+    // }
+    // addLi("py")
+    // ---------------------------------------
+
+    // 2.OPTIMIZED WAY TO ADD ELEMENT.
+    // a.using arrow function.
+    // ((lang) => {
+    //     const li = document.createElement("li")
+    //     li.appendChild(document.createTextNode(lang))
+    //     document.querySelector(".ul").appendChild(li)
+    // })(("python"))
+
+    // ---------------------------------------
+    // b.using normal function.
+    // function addLi(list) {
+    //     const li = document.createElement("li")
+    //     li.appendChild(document.createTextNode(list))
+    //     document.querySelector(".ul").appendChild(li)
+    // }
+    // addLi("type script")
+    // addLi("type")
+
+    // ---------------------------------------------------------------------------------------------
+
+    // EDIT / UPDATE:
+    // 1.using innerHTML:
+    // let secondList = document.querySelector(".li:nth-child(2)")
+    // secondList.innerHTML = "wertyu"
+
+    // console.log(secondList);
+    // ---------------------------------------
+    // 2.using create element:
+    // const secondList = document.querySelector(".li:nth-child(3)")
+    // const newList = document.createElement("li")
+    // newList.textContent = "abcd"
+    // secondList.replaceWith(newList)
+
+    // ---------------------------------------
+    // const firstLang = document.querySelector("li:first-child")
+    // firstLang.outerHTML = "<li> wertyuiokjhgfdsa</li>"
+    // ---------------------------------------------------------------------------------------------
+    // RAMOVE:
+    // const lastLang = document.querySelector('li:last-child')
+    // lastLang.remove()
+
+
+    // ---------------------------------------------------------------------------------------------
+
+    // REVISION:
+    // 1.to create a new list:
+    // function add(list) {
+    //     const addLang = document.createElement("li")
+    //     addLang.appendChild(document.createTextNode(list))
+    //     addLang.className = "li"
+    //     document.querySelector(".ul").appendChild(addLang)
+    // }
+    // add("marathi")
+    // add("english")
+
+    // // 2.to update:
+    // const oldLi = document.querySelector("li:nth-child(3)")
+    // const newLi = document.createElement("li")
+    // newLi.textContent = "sanskrit"
+    // oldLi.replaceWith(newLi)
+
+    // // 3.delete:
+    // const li = document.querySelector("li:nth-child(5)")
+    // li.remove()
+
+</script>
+
+<script>
+    // // FINAL PRACTICE
+    // let li = document.querySelectorAll(".li")
+    // console.log(li);
+    // let arrLi = Array.from(li)
+    // console.log(arrLi);
+
+
+    // // CREATE A NEW LIST:
+    // function addListItem(listItem) {
+    //     let addLang = document.createElement("li")
+    //     addLang.appendChild(document.createTextNode(listItem))
+    //     document.querySelector(".ul").appendChild(addLang)
+    // }
+    // addListItem("marathi")
+    // addListItem("english")
+
+    // //EDIT LIST ELEMENT:
+    // let select = document.querySelector("li:nth-child(5)")
+    // let newLi = document.createElement("li")
+    // newLi.innerHTML = "sanskrut"
+    // select.appendChild(newLi)
+    
+    // // REMOVE LISTITEM:
+    // let rem = document.querySelector("li:nth-child(4)")
+    // rem.remove()
+</script>
+
+</html>

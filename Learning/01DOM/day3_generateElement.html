@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            background: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body class="body">
+    
+</body>
+
+<script>
+const div1 = document.createElement('div')
+console.log(div1);                         
+div1.className = "main"                     //
+div1.id = "heading"                         //
+div1.setAttribute("title","main_heading")
+div1.style.color = "red"                    //
+div1.style.padding = "20px"                 //    
+div1.style.width = "201px"                  //
+div1.style.backgroundColor = "white"        //
+div1.style.border = "20px","solid" ,"red"   //
+
+// 1.first way to adding text &  display 
+// div1.innerText = "this is first way to display a div"   //  these all things overwrite the values,i.e=> for example innerText selects the value or reference  and overwrite the given ("this is first way to display a div")value to it.
+// document.body.appendChild(div1)
+
+// 2.second way to adding text & diaplay
+const addText = document.createTextNode("this is second way to diaplay div")     //here setAttribute and createTextNode are not going to overwrite values insted these creates and add the value to it.
+console.log(addText);
+div1.appendChild(addText)
+document.body.appendChild(div1)
+
+</script>
+
+</html>
