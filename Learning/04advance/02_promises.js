@@ -87,7 +87,7 @@
 
 // async function getAllUsers() {
 //     try {
-//         const response = await fetch("https://api.github.com/users/hiteshchoudhary")
+//         const response = await fetch("https://api.github.com/users/VaibhavTakawane")
 //         const data = await response.json()
 //         console.log(data);
 //     } catch (error) {
@@ -98,7 +98,7 @@
 
 // -----------------------------------------------------------------
 // 2. using then, catch
-// fetch("https://api.github.com/users/hiteshchoudhary")
+// fetch("https://api.github.com/users/VaibhavTakawane")
 // .then((response)=>{
 //     return response.json()
 // })
@@ -111,9 +111,9 @@
 // -----------------------------------------------------------------
 
 // ex1
-// "https://api.github.com/users/hiteshchoudhary"
+// "https://api.github.com/users/VaibhavTakawane"
 
-// fetch("https://api.github.com/users/hiteshchoudhary")
+// fetch("https://api.github.com/users/VaibhavTakawane")
 //     .then((response) => {
 //         return response.json()
 //     })
@@ -132,7 +132,7 @@
 
 // async function getData() {
 //     try {
-//         const response = await fetch("https://api.github.com/users/hiteshchoudhary");
+//         const response = await fetch("https://api.github.com/users/VaibhavTakawane");
 //         const data = await response.json()
 //         console.log(data.id);
 //         console.log(data.followers);
@@ -146,7 +146,7 @@
 
 // async function getAllUsers() {
 //     try {
-//         const response = await fetch("https://api.github.com/users/hiteshchoudhary")
+//         const response = await fetch("https://api.github.com/users/VaibhavTakawane")
 //         const data = await response.json()
 //         console.log(data.blog);
 //     } catch (error) {
